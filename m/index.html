@@ -12,8 +12,8 @@
   <meta name="referrer" content="no-referrer">
   <link rel="icon" href="/icon.png">
   <style>
-    :root { --bg: #F5F5F7; --surface: #FFFFFF; --text: #1D1D1F; --muted: #50505A; --line: rgba(60,60,67,0.12); --accent: #6554C0; --on-accent: #FFFFFF; --soft: #EFECFF; }
-    @media (prefers-color-scheme: dark) { :root { --bg: #000000; --surface: #1C1C1E; --text: #F5F5F7; --muted: #C4C4CC; --line: rgba(235,235,245,0.16); --accent: #C4B5FD; --on-accent: #251A38; --soft: rgba(196,181,253,0.16); } }
+    :root { --bg: #F7F7FA; --surface: #FFFFFF; --text: #1B1A22; --muted: #5C5A68; --line: rgba(27,26,34,0.10); --accent: #5B50F0; --on-accent: #FFFFFF; --soft: #EEEDFF; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #0D0C11; --surface: #1A1920; --text: #F3F2F8; --muted: #B5B2C2; --line: rgba(243,242,248,0.13); --accent: #8C84FF; --on-accent: #120F1F; --soft: rgba(140,132,255,0.14); } }
     * { box-sizing: border-box; }
     body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", system-ui, sans-serif; -webkit-text-size-adjust: 100%; }
     main { max-width: 560px; margin: 0 auto; padding: 24px 16px calc(120px + env(safe-area-inset-bottom)); }
@@ -24,7 +24,7 @@
     ol { list-style: none; margin: 0; padding: 0; background: var(--surface); border-radius: 14px; }
     li { display: flex; gap: 12px; padding: 14px 16px; border-top: 1px solid var(--line); }
     li:first-child { border-top: 0; }
-    .num { flex: none; width: 26px; height: 26px; border-radius: 13px; background: var(--soft); color: var(--accent); font-size: 13px; font-weight: 700; display: grid; place-items: center; margin-top: 1px; }
+    .num { flex: none; width: 26px; height: 26px; border-radius: 8px; background: var(--soft); color: var(--accent); font-size: 13px; font-weight: 700; display: grid; place-items: center; margin-top: 1px; }
     .body { min-width: 0; flex: 1; }
     .name { font-weight: 600; word-break: keep-all; overflow-wrap: anywhere; }
     .meta { color: var(--muted); font-size: 14px; }
