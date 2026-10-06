@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["R599JZYXT7.com.haeun.mappin"],
+        "components": [{ "/": "/m/*", "comment": "Shared collection links" }]
+      }
+    ]
+  }
+}
