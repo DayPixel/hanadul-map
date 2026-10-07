@@ -79,7 +79,7 @@
           if (meta) { var m = document.createElement('div'); m.className = 'meta'; m.textContent = meta; body.appendChild(m); }
           var links = document.createElement('div'); links.className = 'links';
           var query = [place.name, place.area].filter(Boolean).join(' ');
-          var naver = /^https:\/\/map\.naver\.com\/p\/entry\/place\/[1-9][0-9]{0,30}$/.test(place.naverUrl || '') ? place.naverUrl : 'https://map.naver.com/p/search/' + encodeURIComponent(query);
+          var naver = /^https:\/\/map\.naver\.com\/p\/entry\/place\/[1-9][0-9]{0,30}$/.test(place.naverUrl || '') ? place.naverUrl : 'https://map.naver.com/p/search/' + encodeURIComponent(place.name);
           links.appendChild(link('네이버 지도', naver));
           if (/^[A-Za-z0-9_-]{1,255}$/.test(place.googlePlaceId || '')) links.appendChild(link('Google 지도', 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(query) + '&query_place_id=' + place.googlePlaceId));
           body.appendChild(links);
