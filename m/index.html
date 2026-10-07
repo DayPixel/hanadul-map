@@ -55,7 +55,7 @@
     (function () {
       var SUPABASE_URL = 'https://vsbmjqyzzagrembavshz.supabase.co';
       var PUBLISHABLE_KEY = 'sb_publishable_0zkkkU8oKbshZ3dTJakiJw_sehGTq9E';
-      var token = new URLSearchParams(location.search).get('c') || '';
+      var token = new URLSearchParams(location.search.replace(/%0[ad]/gi, '')).get('c') || '';
       var $ = function (id) { return document.getElementById(id); };
       function fail(message) { $('summary').textContent = ''; $('state').hidden = false; $('state').textContent = message; $('open-app').href = 'https://apps.apple.com/kr/app/id6812646676?ct=shared_map_missing'; $('open-app').textContent = '하나둘 앱 받기'; $('install').hidden = true; }
       if (!/^[a-f0-9]{32}$/.test(token)) return fail('링크가 올바르지 않아요. 공유받은 주소를 다시 확인해 주세요.');
